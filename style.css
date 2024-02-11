@@ -1,0 +1,38 @@
+
+.logo {
+    display: flex;
+}
+h1 {
+    display: flex;
+    color: black;
+}
+nav a {
+    color: black;
+    text-decoration: none;
+}
+.mainpicture {
+    width: 1300px;
+    height: 620px;
+}
+.article1 {
+    border: 1px solid black;
+    padding: 20px;
+}
+form {
+    border: 1px solid black;
+}
+footer {
+    background-color: rgb(0, 255, 0);
+}
+.footer1 {
+    border: 1px solid black;
+    position: relative;
+}
+.footer2 {
+    border: 1px solid black;
+    position: relative;
+}
+.footer3 {
+    border: 1px solid black;
+    position: relative;
+}
