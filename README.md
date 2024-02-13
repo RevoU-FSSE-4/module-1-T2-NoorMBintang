@@ -7,6 +7,7 @@
 Welcome to Forest Revival a website dedicated to conserving precious ecosystems around the globe and supporting exploration initiatives. Our mission is to combat deforestation, promote biodiversity, and create a sustainable future for the planet.
 
 ### Table of Content
+* Home
 * About
 * Features
 * Newsletters
