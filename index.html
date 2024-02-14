@@ -10,47 +10,77 @@
     <title>Forest Revival</title>
 </head>
 <body>
-    <header>
-        <img src="assets/logo2jpg.png" width="50px" height="50px" alt="logo" class="logo">
-        <h1>Forest Revival</h1>
-        <!-- Update Link address -->
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="#about">About</a>
-            <a href="#features">Features</a>
-            <a href="#newsLetters">Newsletters</a>
-            <a href="#contributing">Contributing</a>
-        </nav>
-        <!-- img 1.5:1 -->
-        <picture>
-            <img src="assets/Add a heading2.png" alt="mainpicture" class="mainpicture">
-        </picture>
+    <header class="header">
+            <div class="header-logo">
+                <img src="assets/logo2jpg.png" alt="logo" class="logo">
+                <h1>Forest Revival</h1>
+            </div>
+            <!-- Update Link address -->
+            <div class="header-nav">
+                <nav>
+                    <a href="index.html">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#features">Features</a>
+                    <a href="#newsLetters">Newsletters</a>
+                    <a href="#contributing">Contributing</a>
+                </nav>
+            </div>
     </header>
     <main>
-        <!-- need to collect article and click readmore to other page -->
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/Ic-J6hcSKa8?si=x-mqirg7sr6A_5Ll" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        <article class="article1">
-            <h3>The Urgent Call to Action: Deforestation Threatens Our Planet's Future</h3>
-            <!-- Picture ratio 1:1.45 -->
+        <!-- img 1.5:1 -->
             <picture>
-                <img src="/assets/pexels-evan-nitschke-1003699.jpg" alt="deforesation" width="435" height="300">
+                <img src="assets/Add a heading2.png" alt="mainpicture" class="mainpicture">
             </picture>
-            <p> <strong>Deforestation</strong>, the deliberate clearing of <strong>forest</strong> on a large scale, poses one of the most<br>
-                pressing <strong>environmental </strong>challenges of our time. As trees are felled to make way for<br>
-                agriculture, urbanization, and industrial activities, the repercussions reverberate<br>
-                across the globe, endangering biodiversity, exacerbating climate change, and <br>
-                jeopardizing the livelihoods of millions.
-            </p><br>
-            <a href="#readmore">Read More</a><br><br>
-        </article>
+        <!-- need to collect article and click readmore to other page -->
+        <div class="main-container">
+            <div class="article item1">
+                <h2>Deforestation Documentation</h2><br>
+                <iframe width="550" height="400" src="https://www.youtube.com/embed/Ic-J6hcSKa8?si=x-mqirg7sr6A_5Ll" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="article item2">
+                <article>
+                    <h3>The Urgent Call to Action: Deforestation Threatens Our Planet's Future</h3>
+                    <!-- Picture ratio 1:1.45 -->
+                    <picture>
+                        <img src="/assets/pexels-evan-nitschke-1003699.jpg" alt="deforesation" width="435" height="300">
+                    </picture>
+                    <p> 
+                        <strong>Deforestation</strong>, the deliberate clearing of <strong>forest</strong> on a large scale, poses one of the most<br>
+                        pressing <strong>environmental </strong>challenges of our time. As trees are felled to make way for<br>
+                        agriculture, urbanization, and industrial activities, the repercussions reverberate<br>
+                        across the globe, endangering biodiversity, exacerbating climate change, and <br>
+                        jeopardizing the livelihoods of millions. <a href="#readmore" class="readmore">Read More</a>
+                    </p>
+                </article>
+            </div>
+            <div class="article item3">
+                <article>
+                    <h3>The Urgent Call to Action: Deforestation Threatens Our Planet's Future</h3>
+                    <!-- Picture ratio 1:1.45 -->
+                    <picture>
+                        <img src="/assets/pexels-evan-nitschke-1003699.jpg" alt="deforesation" width="435" height="300">
+                    </picture>
+                    <p> 
+                        <strong>Deforestation</strong>, the deliberate clearing of <strong>forest</strong> on a large scale, poses one of the most<br>
+                        pressing <strong>environmental </strong>challenges of our time. As trees are felled to make way for<br>
+                        agriculture, urbanization, and industrial activities, the repercussions reverberate<br>
+                        across the globe, endangering biodiversity, exacerbating climate change, and <br>
+                        jeopardizing the livelihoods of millions. <a href="#readmore" class="readmore">Read More</a>
+                    </p>
+                </article>
+            </div>
+        </div>
         <!-- to be checked later just incase need improvement -->
-        <form>
-            <input type="text" placeholder="Name" required><br>
-            <input type="email" placeholder="E-mail" required><br>
-            <input type="checkbox"> Send Newsletters<br>
-            <textarea id="textarea" name="textarea" rows="4" cols="40" placeholder="Write For Us"></textarea><br>
-            <input type="submit" value="Submit"><br><br>
-        </form>
+        <div class="main-form">
+            <p>Subscribe for more update from us</p>
+            <form>
+                <input type="text" placeholder="Name" required><br>
+                <input type="email" placeholder="E-mail" required><br>
+                <input type="checkbox"> Send Newsletters<br>
+                <textarea id="textarea" name="textarea" rows="4" cols="40" placeholder="Write For Us"></textarea><br>
+                <input type="submit" value="Submit"><br><br>
+            </form>
+        </div>
     </main>
     <!-- need more content on footer -->
     <footer>
@@ -66,8 +96,8 @@
         </div>
         <!-- add logo to link -->
         <div class="footer3">
-            Follow Us
-            <picture>
+                <p>Follow Us</p>
+            <picture class="footer-footer3-logo">
                 <img src="/assets/facebooklogo.jpg" alt="facebookLogo" width="50px" height="50px">
                 <img src="/assets/xlogo.jpg" alt="xLogo" width="50px" height="50px">
                 <img src="/assets/instagramlogo.jpg" alt="intagramLogo" width="50px" height="50px">
