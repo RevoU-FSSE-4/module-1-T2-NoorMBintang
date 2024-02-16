@@ -3,36 +3,55 @@
 * {
     margin: 0px;
 }
-.header {
-    /* mandatory for sticky nav */
-    position: -webkit- sticky;
-    position: sticky;
+.container {
+    max-width: 1350px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.header-nav {
+    margin-top: 100px;
+    /* position: -webkit- sticky; */
+    position: fixed;
     top: 0;
-    /* mandatory for sticku nav */
+    z-index: 100;
     background-color: white;
     display: flex;
-    justify-content:center;
     align-items: center;
+    width: 1350px;
+    margin: 0 auto;
+    height: 50px;
 }
-.header-logo {
+
+.header-card {
     display: flex;
+    align-items: center;
+    background-color: white;
 }
+
 .logo {
     width: 65px; 
     height: 65px;
 }
+
 h1 {
-    font-size:x-large;
-    align-items: center;
-    justify-content: center;
-    display: flex;
+    font-size: x-large;
     padding-left: 10px;
 }
-.header-nav {
-    display: inline;
-    padding-left: 40%;
+
+.nav-list { 
+    list-style-type: none;
+    display: flex;
+    /* padding-left: 10%; */
     font-size: larger;
     margin-right: 5px;
+    margin-left: 170%;
+    background-color: white;
+}
+/* check hamburger button */
+.hamburger {
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
 }
 a {
     color: black;
@@ -137,38 +156,77 @@ footer {
     * {
         margin: 0px;
     }
-    .header {
+    .container {
+        max-width: 650px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    header {
         /* mandatory for sticky nav */
-        z-index: 100;
-        /* padding-top: 6%; */
-        position: sticky;
+        position: -webkit-sticky;
+        position: fixed;
         top: 0;
+        z-index: 100;
         /* mandatory for sticku nav */
         background-color: white;
         display: flex;
-        justify-content:center;
+        /* justify-content:center; */
         align-items: center;
+        max-width: 600px;
+        margin: 0 auto;
     }
-    .header-logo {
+    .header-card {
         display: flex;
+        max-width: 1350px;
+        /* padding-left: 20%; */
+        /* margin-right: 30%; */
     }
     .logo {
-        width: 40px; 
-        height: 40px;
+        width: 45px; 
+        height: 45px;
     }
     h1 {
-        font-size:larger;
+        font-size:x-large;
         align-items: center;
-        justify-content: center;
+        /* justify-content: center; */
+        /* display: flex; */
+        padding-left: 10px;
+    }
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 41px;
+        margin-left: 260px;
+        font-size:large;
+        /* margin-right: 5px; */
+        background-color: white;
+    }
+    .nav-list.active {
         display: flex;
-        padding-left: 5px;
     }
-    .header-nav {
-        display: inline;
-        padding-left: 10%;
-        font-size:small;
-        margin-right: 5px;
+
+    .nav-list li {
+        margin: 5px 0;
     }
+
+    .hamburger {
+        display: block;
+        margin-left:350px;
+    }
+    /* Add animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fadeIn {
+    animation: fadeIn 1s ease-in-out;
+}
     a {
         color: black;
         text-decoration: none;
@@ -176,7 +234,7 @@ footer {
     }
     footer {
         background-color: #4CBB17;
-        /* width: 600px; */
+        width: 650px;
         display: flex;
         justify-content: center;
     }
@@ -219,21 +277,24 @@ footer {
         height: 300px;
     }
     .main-container {
+        /* display: grid; */
+        /* grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); */
+        /* gap: 20px; */
         display: flex;
         justify-content: center;
-        /* flex-wrap: wrap; */
-        gap: 5px;
-        /* padding: 10px; */
-        /* width: 1350px; */
+        flex-wrap: wrap;
+        gap: 5px; *
+        padding: 5px; 
+        width: 600px; 
     }
     .article {
         box-shadow: 1px 2px 0 rgba(0,0,0,.05);
         border: 1px solid grey;
         border-radius: 0.5em;
-        width: 630px;
+        width: 650px;
         height: 300px;
-        margin: 5px;
-        text-align: center;
+        /* margin: 5px; */
+        /* text-align: center; */
         padding: 5px;
     }
     .item1 {
