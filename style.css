@@ -11,7 +11,7 @@
 .header-nav {
     margin-top: 100px;
     /* position: -webkit- sticky; */
-    position: fixed;
+    position: sticky;
     top: 0;
     z-index: 100;
     background-color: white;
@@ -29,8 +29,8 @@
 }
 
 .logo {
-    width: 65px; 
-    height: 65px;
+    width: 50px; 
+    height: 50px;
 }
 
 h1 {
@@ -89,7 +89,8 @@ footer {
 .container-mainpicture {
     justify-content: center;
     display: flex;
-    /* width: 1350px; */
+    /* position: absolute; */
+    width: 1350px;
 }
 .mainpicture {
     width: 1350px;
@@ -161,19 +162,21 @@ footer {
         margin: 0 auto;
         padding: 20px;
     }
-    header {
+    .header-nav {
         /* mandatory for sticky nav */
-        position: -webkit-sticky;
-        position: fixed;
+        position: -webkit- sticky;
+        position: sticky;
         top: 0;
         z-index: 100;
         /* mandatory for sticku nav */
         background-color: white;
         display: flex;
-        /* justify-content:center; */
+        justify-content:center;
         align-items: center;
-        max-width: 600px;
+        max-width: 650px;
         margin: 0 auto;
+        /* height: 130px; */
+        /* padding-top: 45px; */
     }
     .header-card {
         display: flex;
